@@ -1,0 +1,104 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Travel Request</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+
+	<script src="/js/jquery.ui.datepicker.js"></script>
+	<link href="/datepicker.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="/style.css"  type="text/css"/>
+
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+
+function validateForm() {
+
+	var err='';
+	if (err=='') {
+		return true;
+	}
+	else {
+		alert(err);
+		return false;
+	}
+}
+</script>
+<form method="post" action="/viewform.php" name="formview" id="formview" onsubmit='return validateForm();'>
+<input type="hidden" name="form" value="205"/>
+
+<input type="text" name="firstname2" style='display:none'>
+
+
+
+				<table class="formtable" border="0" cellpadding="3" cellspacing="0" width="100%" style="border: #c0c0c0 solid 1px;">
+				<tr>
+				<td colspan="2" style="border-bottom: #c0c0c0 solid 1px; padding: 10px; background-color: #F2F2F2;">
+				<span style="font-size: 10pt; font-weight: bold;">
+		        <h3 style='display: inline'>Corporate Travel Request Form</h3>
+								</span>
+				</td>
+				</tr>
+
+        <tr><td> <br/></td></tr>
+
+				<tr><td width="160" style="padding-left: 8px;" valign="top">Name as it appears on photo ID used for Travel </td>
+					       <td width="350"><input type="text" name="text_1359" id="text_1359" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Company and Department Name </td>
+					       <td width="350"><input type="text" name="text_1360" id="text_1360" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Reason for travel or meeting number </td>
+					       <td width="350"><input type="text" name="text_1361" id="text_1361" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Phone Number </td>
+					       <td width="350"><input type="text" name="text_1362" id="text_1362" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Email Address </td>
+					       <td width="350"><input type="text" name="text_1363" id="text_1363" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Gender (required by TSA) </td>
+					       <td width="350"><select name="select_1364" id="select_1364"><option value="Male">Male</option>
+<option value="Female">Female</option>
+</select></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Date of Birth </td>
+					       <td width="350"><script language='javascript'>$(function(){ $("#datepicker_1365").datepicker(); });</script><input type="text" name="datepicker_1365" id="datepicker_1365"></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Departure Date </td>
+					       <td width="350"><script language='javascript'>$(function(){ $("#datepicker_1366").datepicker(); });</script><input type="text" name="datepicker_1366" id="datepicker_1366"></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Preferred departure time </td>
+					       <td width="350"><select name="select_1367" id="select_1367"><option value="Early morning (pre 7am)">Early morning (pre 7am)</option>
+<option value="Morning (7am to 12pm)">Morning (7am to 12pm)</option>
+<option value="Afternoon (12pm to 5pm)">Afternoon (12pm to 5pm)</option>
+<option value="Evening (5pm to 12am)">Evening (5pm to 12am)</option>
+<option value="Overnight/Red Eye">Overnight/Red Eye</option>
+</select></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Departure City/Airport </td>
+					       <td width="350"><input type="text" name="text_1368" id="text_1368" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Destination City/Airport </td>
+					       <td width="350"><input type="text" name="text_1369" id="text_1369" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Return Date </td>
+					       <td width="350"><script language='javascript'>$(function(){ $("#datepicker_1370").datepicker(); });</script><input type="text" name="datepicker_1370" id="datepicker_1370"></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Preferred return time </td>
+					       <td width="350"><select name="select_1371" id="select_1371"><option value="Early morning (pre 7am)">Early morning (pre 7am)</option>
+<option value="Morning (7am to 12pm)">Morning (7am to 12pm)</option>
+<option value="Afternoon (12pm to 5pm)">Afternoon (12pm to 5pm)</option>
+<option value="Evening (5pm to 12am)">Evening (5pm to 12am)</option>
+<option value="Overnight/Red Eye">Overnight/Red Eye</option>
+</select></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Total number of travelers </td>
+					       <td width="350"><input type="text" name="text_1372" id="text_1372" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Traveler(s) Additional Name(s) and Birth Date(s) </td>
+					       <td width="350"><textarea name="textarea_1373" id="textarea_1373" cols="32" rows="4"></textarea></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Do you require a hotel? </td>
+					       <td width="350"><select name="select_1374" id="select_1374"><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Preferred hotel name, chain or location </td>
+					       <td width="350"><input type="text" name="text_1375" id="text_1375" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Do you require a car rental? </td>
+					       <td width="350"><select name="select_1376" id="select_1376"><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Preferred car rental company </td>
+					       <td width="350"><input type="text" name="text_1377" id="text_1377" size="32"/></td></tr><tr><td width="160" style="padding-left: 8px;" valign="top">Additional comments/requests </td>
+					       <td width="350"><textarea name="textarea_1378" id="textarea_1378" cols="32" rows="4"></textarea></td></tr>
+
+	<tr>
+	<td colspan="2" height="55" valign="middle" align="center">
+		<input type="submit" name="submit" id="submit" class='formsubmit' value="Submit" style="width: 120px;"/>
+	</td>
+	</tr>
+	</table>
+</form>
+
+</body>
+</html>
